@@ -1,2 +1,2 @@
 # IZA
-Project for the IZA course at BUT FIT.
+Projectis for the IZA course at BUT FIT.
