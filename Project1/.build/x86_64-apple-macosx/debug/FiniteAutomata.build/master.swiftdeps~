@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "c7b6b3ba699e42f4237da7e058998d20"
+build_time: [1617292565, 347130000]
+inputs:
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/FiniteAutomata.swift": [1617292464, 542267396]

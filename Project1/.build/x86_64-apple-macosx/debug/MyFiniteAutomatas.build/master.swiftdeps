@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "8a852ca6b2b23277c27c9215d9a173ac"
+build_time: [1617290435, 147671000]
+inputs:
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/AstarC2Bstar.swift": [1614769833, 790858823]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/Astar_Bstar_Cstar.swift": [1614769833, 791027852]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/CIdentifierAutomata.swift": [1614769833, 791219902]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/ExampleFiniteAutomata.swift": [1614769833, 791357456]

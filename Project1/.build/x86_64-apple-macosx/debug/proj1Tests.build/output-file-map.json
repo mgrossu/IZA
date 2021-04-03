@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/master.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/FiniteAutomataTests.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/XCTestManifests.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/proj1Tests.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swiftdeps"
+  }
+}

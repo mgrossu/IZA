@@ -1,0 +1,66 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Astar_Bstar_Cstar"
+provides-nominal:
+- "17MyFiniteAutomatas17Astar_Bstar_CstarV"
+provides-member:
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Array"
+- "Astar_Bstar_Cstar"
+- "ExampleAutomataInputs"
+- "ExampleStringAutomata"
+- "StaticString"
+- "String"
+- "StringLiteralType"
+- "UnicodeScalarType"
+depends-member:
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "StaticString"]
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "String"]
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", ""]
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "description"]
+- !private ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "init"]
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "invalid"]
+- ["17MyFiniteAutomatas17Astar_Bstar_CstarV", "valid"]
+- ["17MyFiniteAutomatas21ExampleAutomataInputsP", ""]
+- ["17MyFiniteAutomatas21ExampleAutomataInputsP", "description"]
+- ["17MyFiniteAutomatas21ExampleAutomataInputsP", "invalid"]
+- ["17MyFiniteAutomatas21ExampleAutomataInputsP", "valid"]
+- ["17MyFiniteAutomatas21ExampleStringAutomataP", ""]
+- ["17MyFiniteAutomatas21ExampleStringAutomataP", "description"]
+- ["17MyFiniteAutomatas21ExampleStringAutomataP", "invalid"]
+- ["17MyFiniteAutomatas21ExampleStringAutomataP", "valid"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "17MyFiniteAutomatas17Astar_Bstar_CstarV"
+- "17MyFiniteAutomatas21ExampleAutomataInputsP"
+- "17MyFiniteAutomatas21ExampleStringAutomataP"
+- "s25ExpressibleByArrayLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/XPC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/ObjectiveC.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Dispatch.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreFoundation.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/CoreGraphics.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/IOKit.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/dyld.modulemap"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/module.modulemap"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/module.modulemap"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/mach-o/compact_unwind_encoding.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/xpc/XPC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f9e7c0740febe775d95da0611eefc479"

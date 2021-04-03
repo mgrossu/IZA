@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/master.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/FiniteAutomata.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swiftdeps"
+  }
+}

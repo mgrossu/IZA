@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "088fdb06073550a54e090b5f3fc73558"
+build_time: [1617292565, 767637000]
+inputs:
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/Result.swift": [1614769833, 791687526]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/RunError.swift": [1617292533, 470815187]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/STDERRStream.swift": [1614769833, 791980188]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/main.swift": [1617292504, 5042485]

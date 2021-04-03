@@ -1,0 +1,163 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "FiniteAutomata-debug.module": ["<FiniteAutomata-debug.module>"]
+  "MyFiniteAutomatas-debug.module": ["<MyFiniteAutomatas-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "Simulator-debug.module": ["<Simulator-debug.module>"]
+  "main": ["<FiniteAutomata-debug.module>","<MyFiniteAutomatas-debug.module>","<Simulator-debug.module>","<proj1-debug.exe>","<proj1-debug.module>"]
+  "proj1-debug.exe": ["<proj1-debug.exe>"]
+  "proj1-debug.module": ["<proj1-debug.module>"]
+  "proj1PackageTests-debug.test": ["<proj1PackageTests-debug.test>"]
+  "proj1Tests-debug.module": ["<proj1Tests-debug.module>"]
+  "test": ["<FiniteAutomata-debug.module>","<MyFiniteAutomatas-debug.module>","<Simulator-debug.module>","<proj1-debug.exe>","<proj1-debug.module>","<proj1PackageTests-debug.test>","<proj1Tests-debug.module>"]
+default: "main"
+nodes:
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/":
+    is-directory-structure: true
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/":
+    is-directory-structure: true
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/":
+    is-directory-structure: true
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/":
+    is-directory-structure: true
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/":
+    is-directory-structure: true
+commands:
+  "<FiniteAutomata-debug.module>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule"]
+    outputs: ["<FiniteAutomata-debug.module>"]
+
+  "<MyFiniteAutomatas-debug.module>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.swiftmodule"]
+    outputs: ["<MyFiniteAutomatas-debug.module>"]
+
+  "<Simulator-debug.module>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule"]
+    outputs: ["<Simulator-debug.module>"]
+
+  "<proj1-debug.exe>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1"]
+    outputs: ["<proj1-debug.exe>"]
+
+  "<proj1-debug.module>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.swiftmodule"]
+    outputs: ["<proj1-debug.module>"]
+
+  "<proj1PackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1PackageTests.xctest/Contents/MacOS/proj1PackageTests"]
+    outputs: ["<proj1PackageTests-debug.test>"]
+
+  "<proj1Tests-debug.module>":
+    tool: phony
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.swiftmodule"]
+    outputs: ["<proj1Tests-debug.module>"]
+
+  "C.FiniteAutomata-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/FiniteAutomata.swift"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "FiniteAutomata"
+    module-output-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule"
+    import-paths: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build"
+    objects: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","4.2","-enable-batch-mode","-index-store-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata-Swift.h","-color-diagnostics"]
+    sources: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/FiniteAutomata.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.MyFiniteAutomatas-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/AstarC2Bstar.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/Astar_Bstar_Cstar.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/CIdentifierAutomata.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/ExampleFiniteAutomata.swift","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "MyFiniteAutomatas"
+    module-output-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.swiftmodule"
+    import-paths: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build"
+    objects: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","4.2","-enable-batch-mode","-index-store-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/MyFiniteAutomatas-Swift.h","-color-diagnostics"]
+    sources: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/AstarC2Bstar.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/Astar_Bstar_Cstar.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/CIdentifierAutomata.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/ExampleFiniteAutomata.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.Simulator-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/Simulator.swift","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "Simulator"
+    module-output-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule"
+    import-paths: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build"
+    objects: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","4.2","-enable-batch-mode","-index-store-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-emit-objc-header","-emit-objc-header-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator-Swift.h","-color-diagnostics"]
+    sources: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/Simulator.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.proj1-debug.exe":
+    tool: shell
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swift.o"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/proj1"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug","-o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1","-module-name","proj1","-emit-executable","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.proj1-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/Result.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/RunError.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/STDERRStream.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/main.swift","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "proj1"
+    module-output-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.swiftmodule"
+    import-paths: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build"
+    objects: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","4.2","-enable-batch-mode","-index-store-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/Result.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/RunError.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/STDERRStream.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "C.proj1PackageTests-debug.test":
+    tool: shell
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/FiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swift.o"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1PackageTests.xctest/Contents/MacOS/proj1PackageTests"]
+    description: "Linking ./.build/x86_64-apple-macosx/debug/proj1PackageTests.xctest/Contents/MacOS/proj1PackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug","-o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1PackageTests.xctest/Contents/MacOS/proj1PackageTests","-module-name","proj1PackageTests","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1PackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.15","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.swiftmodule","-L","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.proj1Tests-debug.module":
+    tool: swift-compiler
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/FiniteAutomataTests.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/XCTestManifests.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/proj1Tests.swift","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.swiftmodule"]
+    outputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.swiftmodule"]
+    executable: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "proj1Tests"
+    module-output-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.swiftmodule"
+    import-paths: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build"
+    objects: ["/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/FiniteAutomataTests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/XCTestManifests.swift.o","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1Tests.build/proj1Tests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.15","-swift-version","4.2","-enable-batch-mode","-index-store-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-Onone","-enable-testing","-g","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-color-diagnostics"]
+    sources: ["/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/FiniteAutomataTests.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/XCTestManifests.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/proj1Tests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: 8
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/mgrossu/School/8.semester/IZA/Project1/Sources/FiniteAutomata/","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/","/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/","/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/","/Users/mgrossu/School/8.semester/IZA/Project1/Package.swift","/Users/mgrossu/School/8.semester/IZA/Project1/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

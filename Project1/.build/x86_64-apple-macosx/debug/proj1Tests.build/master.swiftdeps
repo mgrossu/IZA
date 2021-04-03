@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
+options: "f63e69c22d28390145a086a01704a861"
+build_time: [1617292909, 705367000]
+inputs:
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/FiniteAutomataTests.swift": [1614769833, 792529520]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/XCTestManifests.swift": [1614769833, 792651380]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Tests/proj1Tests/proj1Tests.swift": [1614769833, 792861597]

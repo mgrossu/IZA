@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/master.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/AstarC2Bstar.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/AstarC2Bstar.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/Astar_Bstar_Cstar.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/Astar_Bstar_Cstar.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/CIdentifierAutomata.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/CIdentifierAutomata.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/MyFiniteAutomatas/ExampleFiniteAutomata.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/ExampleFiniteAutomata.swiftdeps"
+  }
+}

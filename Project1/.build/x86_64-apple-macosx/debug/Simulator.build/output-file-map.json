@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/master.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/Simulator.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/Simulator.swiftdeps"
+  }
+}

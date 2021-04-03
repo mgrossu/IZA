@@ -1,0 +1,19 @@
+{
+  "states" : [
+    "A"
+  ],
+  "symbols" : [
+    "a"
+  ],
+  "transitions" : [
+    {
+      "with" : "a",
+      "to" : "A",
+      "from" : "A"
+    }
+  ],
+  "initialState" : "A",
+  "finalStates" : [
+    "A"
+  ]
+}

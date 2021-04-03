@@ -1,0 +1,339 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Transition"
+- "FiniteAutomata"
+provides-nominal:
+- "14FiniteAutomata10TransitionV"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV"
+- "14FiniteAutomataAAV10CodingKeysO"
+provides-member:
+- ["14FiniteAutomata10TransitionV", ""]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", ""]
+- ["14FiniteAutomataAAV", ""]
+- ["14FiniteAutomataAAV10CodingKeysO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "=="
+- !private "Array"
+- "AssignmentPrecedence"
+- "CodingKey"
+- !private "CodingKeys"
+- "Decodable"
+- "Decoder"
+- "FiniteAutomata"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
+- "Transition"
+- !private "_findStringSwitchCase"
+- !private "finalStates"
+- !private "from"
+- !private "initialState"
+- !private "states"
+- !private "symbols"
+- !private "to"
+- !private "transitions"
+- !private "with"
+- !private "~="
+depends-member:
+- ["s9CodingKeyP", "=="]
+- ["s9CodingKeyP", "Default_RawValue"]
+- ["s9CodingKeyP", "RawValue"]
+- ["s9CodingKeyP", ""]
+- ["s9CodingKeyP", "_Default_RawValue"]
+- !private ["s9CodingKeyP", "_findStringSwitchCase"]
+- ["s9CodingKeyP", "_rawHashValue"]
+- ["s9CodingKeyP", "debugDescription"]
+- ["s9CodingKeyP", "description"]
+- !private ["s9CodingKeyP", "finalStates"]
+- !private ["s9CodingKeyP", "findStringSwitchCase"]
+- !private ["s9CodingKeyP", "from"]
+- ["s9CodingKeyP", "hash"]
+- ["s9CodingKeyP", "hashValue"]
+- ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "initialState"]
+- ["s9CodingKeyP", "intValue"]
+- ["s9CodingKeyP", "rawValue"]
+- !private ["s9CodingKeyP", "states"]
+- ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", "symbols"]
+- !private ["s9CodingKeyP", "to"]
+- !private ["s9CodingKeyP", "transitions"]
+- !private ["s9CodingKeyP", "with"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "=="]
+- ["14FiniteAutomataAAV10CodingKeysO", "=="]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "Default_RawValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "Default_RawValue"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "RawValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "RawValue"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", ""]
+- ["14FiniteAutomataAAV10CodingKeysO", ""]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "_Default_RawValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "_Default_RawValue"]
+- !private ["14FiniteAutomata10TransitionV10CodingKeysO", "_findStringSwitchCase"]
+- !private ["14FiniteAutomataAAV10CodingKeysO", "_findStringSwitchCase"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "_rawHashValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "_rawHashValue"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "debugDescription"]
+- ["14FiniteAutomataAAV10CodingKeysO", "debugDescription"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "description"]
+- ["14FiniteAutomataAAV10CodingKeysO", "description"]
+- ["14FiniteAutomataAAV10CodingKeysO", "finalStates"]
+- !private ["14FiniteAutomata10TransitionV10CodingKeysO", "findStringSwitchCase"]
+- !private ["14FiniteAutomataAAV10CodingKeysO", "findStringSwitchCase"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "from"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "hash"]
+- ["14FiniteAutomataAAV10CodingKeysO", "hash"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "hashValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "hashValue"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "init"]
+- ["14FiniteAutomataAAV10CodingKeysO", "init"]
+- !private ["14FiniteAutomata10TransitionV10CodingKeysO", "init"]
+- !private ["14FiniteAutomataAAV10CodingKeysO", "init"]
+- ["14FiniteAutomataAAV10CodingKeysO", "initialState"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "intValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "intValue"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "rawValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "rawValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "states"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "stringValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "stringValue"]
+- ["14FiniteAutomataAAV10CodingKeysO", "symbols"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "to"]
+- ["14FiniteAutomataAAV10CodingKeysO", "transitions"]
+- ["14FiniteAutomata10TransitionV10CodingKeysO", "with"]
+- ["s28CustomDebugStringConvertibleP", "=="]
+- ["s28CustomDebugStringConvertibleP", "Default_RawValue"]
+- ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
+- ["s28CustomDebugStringConvertibleP", "_rawHashValue"]
+- ["s28CustomDebugStringConvertibleP", "debugDescription"]
+- ["s28CustomDebugStringConvertibleP", "description"]
+- !private ["s28CustomDebugStringConvertibleP", "finalStates"]
+- !private ["s28CustomDebugStringConvertibleP", "findStringSwitchCase"]
+- !private ["s28CustomDebugStringConvertibleP", "from"]
+- ["s28CustomDebugStringConvertibleP", "hash"]
+- ["s28CustomDebugStringConvertibleP", "hashValue"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initialState"]
+- ["s28CustomDebugStringConvertibleP", "intValue"]
+- ["s28CustomDebugStringConvertibleP", "rawValue"]
+- !private ["s28CustomDebugStringConvertibleP", "states"]
+- ["s28CustomDebugStringConvertibleP", "stringValue"]
+- !private ["s28CustomDebugStringConvertibleP", "symbols"]
+- !private ["s28CustomDebugStringConvertibleP", "to"]
+- !private ["s28CustomDebugStringConvertibleP", "transitions"]
+- !private ["s28CustomDebugStringConvertibleP", "with"]
+- ["s23CustomStringConvertibleP", "=="]
+- ["s23CustomStringConvertibleP", "Default_RawValue"]
+- ["s23CustomStringConvertibleP", "RawValue"]
+- ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "_Default_RawValue"]
+- !private ["s23CustomStringConvertibleP", "_findStringSwitchCase"]
+- ["s23CustomStringConvertibleP", "_rawHashValue"]
+- ["s23CustomStringConvertibleP", "debugDescription"]
+- ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "finalStates"]
+- !private ["s23CustomStringConvertibleP", "findStringSwitchCase"]
+- !private ["s23CustomStringConvertibleP", "from"]
+- ["s23CustomStringConvertibleP", "hash"]
+- ["s23CustomStringConvertibleP", "hashValue"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "initialState"]
+- ["s23CustomStringConvertibleP", "intValue"]
+- ["s23CustomStringConvertibleP", "rawValue"]
+- !private ["s23CustomStringConvertibleP", "states"]
+- ["s23CustomStringConvertibleP", "stringValue"]
+- !private ["s23CustomStringConvertibleP", "symbols"]
+- !private ["s23CustomStringConvertibleP", "to"]
+- !private ["s23CustomStringConvertibleP", "transitions"]
+- !private ["s23CustomStringConvertibleP", "with"]
+- !private ["Se", "CodingKeys"]
+- !private ["Se", "String"]
+- !private ["Se", "Transition"]
+- ["Se", ""]
+- !private ["Se", "_findStringSwitchCase"]
+- !private ["Se", "finalStates"]
+- !private ["Se", "findStringSwitchCase"]
+- !private ["Se", "from"]
+- ["Se", "init"]
+- !private ["Se", "initialState"]
+- !private ["Se", "states"]
+- !private ["Se", "symbols"]
+- !private ["Se", "to"]
+- !private ["Se", "transitions"]
+- !private ["Se", "with"]
+- !private ["s7DecoderP", "container"]
+- ["SQ", "=="]
+- ["SQ", "Default_RawValue"]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
+- ["SQ", "debugDescription"]
+- ["SQ", "description"]
+- !private ["SQ", "finalStates"]
+- !private ["SQ", "findStringSwitchCase"]
+- !private ["SQ", "from"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
+- ["SQ", "init"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initialState"]
+- ["SQ", "intValue"]
+- ["SQ", "rawValue"]
+- !private ["SQ", "states"]
+- ["SQ", "stringValue"]
+- !private ["SQ", "symbols"]
+- !private ["SQ", "to"]
+- !private ["SQ", "transitions"]
+- !private ["SQ", "with"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- ["14FiniteAutomataAAV", "CodingKey"]
+- ["14FiniteAutomataAAV", "CodingKeys"]
+- ["14FiniteAutomataAAV", "Decoder"]
+- ["14FiniteAutomataAAV", "String"]
+- ["14FiniteAutomataAAV", "Transition"]
+- ["14FiniteAutomataAAV", ""]
+- !private ["14FiniteAutomataAAV", "_findStringSwitchCase"]
+- ["14FiniteAutomataAAV", "finalStates"]
+- !private ["14FiniteAutomataAAV", "findStringSwitchCase"]
+- ["14FiniteAutomataAAV", "init"]
+- ["14FiniteAutomataAAV", "initialState"]
+- ["14FiniteAutomataAAV", "states"]
+- ["14FiniteAutomataAAV", "symbols"]
+- ["14FiniteAutomataAAV", "transitions"]
+- ["SH", "=="]
+- ["SH", "Default_RawValue"]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
+- ["SH", "debugDescription"]
+- ["SH", "description"]
+- !private ["SH", "finalStates"]
+- !private ["SH", "findStringSwitchCase"]
+- !private ["SH", "from"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
+- ["SH", "init"]
+- !private ["SH", "init"]
+- !private ["SH", "initialState"]
+- ["SH", "intValue"]
+- ["SH", "rawValue"]
+- !private ["SH", "states"]
+- ["SH", "stringValue"]
+- !private ["SH", "symbols"]
+- !private ["SH", "to"]
+- !private ["SH", "transitions"]
+- !private ["SH", "with"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
+- ["SY", "=="]
+- ["SY", "Default_RawValue"]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "debugDescription"]
+- ["SY", "description"]
+- !private ["SY", "finalStates"]
+- !private ["SY", "findStringSwitchCase"]
+- !private ["SY", "from"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- !private ["SY", "init"]
+- !private ["SY", "initialState"]
+- ["SY", "intValue"]
+- ["SY", "rawValue"]
+- !private ["SY", "states"]
+- ["SY", "stringValue"]
+- !private ["SY", "symbols"]
+- !private ["SY", "to"]
+- !private ["SY", "transitions"]
+- !private ["SY", "with"]
+- ["14FiniteAutomata10TransitionV", "CodingKey"]
+- ["14FiniteAutomata10TransitionV", "CodingKeys"]
+- ["14FiniteAutomata10TransitionV", "Decoder"]
+- ["14FiniteAutomata10TransitionV", "String"]
+- ["14FiniteAutomata10TransitionV", ""]
+- !private ["14FiniteAutomata10TransitionV", "_findStringSwitchCase"]
+- !private ["14FiniteAutomata10TransitionV", "findStringSwitchCase"]
+- ["14FiniteAutomata10TransitionV", "from"]
+- ["14FiniteAutomata10TransitionV", "init"]
+- ["14FiniteAutomata10TransitionV", "to"]
+- ["14FiniteAutomata10TransitionV", "with"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+depends-nominal:
+- "s9CodingKeyP"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- !private "14FiniteAutomata10TransitionV10CodingKeysO"
+- !private "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- !private "14FiniteAutomata10TransitionV10CodingKeysO"
+- !private "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- !private "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "14FiniteAutomataAAV10CodingKeysO"
+- "14FiniteAutomata10TransitionV10CodingKeysO"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "Se"
+- !private "s7DecoderP"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "14FiniteAutomataAAV"
+- "SH"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
+- "SY"
+- "14FiniteAutomata10TransitionV"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/Swift.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64-apple-macos.swiftmodule"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/FiniteAutomata.build/module.modulemap"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/Simulator.build/module.modulemap"
+- "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/MyFiniteAutomatas.build/module.modulemap"
+interface-hash: "0530cb71ed047578d581428bc4759405"

@@ -1,0 +1,22 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "\/Users\/mgrossu\/School\/8.semester\/IZA\/Project1\/.build\/x86_64-apple-macosx\/debug\/proj1PackageTests.xctest\/Contents\/MacOS\/proj1PackageTests",
+      "packageName" : "proj1",
+      "productName" : "proj1PackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "swiftTargetMap" : {
+    "C.FiniteAutomata-debug.module" : "FiniteAutomata",
+    "C.MyFiniteAutomatas-debug.module" : "MyFiniteAutomatas",
+    "C.proj1-debug.module" : "proj1",
+    "C.proj1Tests-debug.module" : "proj1Tests",
+    "C.Simulator-debug.module" : "Simulator"
+  },
+  "testDiscoveryCommands" : {
+
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/master.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/Result.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/Result.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/RunError.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/RunError.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/STDERRStream.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/STDERRStream.swiftdeps"
+  },
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/proj1/main.swift": {
+    "dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.d",
+    "object": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swift.o",
+    "swiftmodule": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/mgrossu/School/8.semester/IZA/Project1/.build/x86_64-apple-macosx/debug/proj1.build/main.swiftdeps"
+  }
+}
