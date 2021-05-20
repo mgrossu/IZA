@@ -10,10 +10,13 @@ depends-top-level:
 - !private "!="
 - !private "&&"
 - !private "=="
+- !private ">"
 - !private "Array"
 - "AssignmentPrecedence"
 - !private "ExtendedGraphemeClusterType"
 - "FiniteAutomata"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "Simulator"
 - "String"
 - !private "StringLiteralType"
@@ -23,14 +26,20 @@ depends-top-level:
 depends-member:
 - !private ["Sa", "append"]
 - !private ["Sa", "contains"]
+- !private ["Sa", "count"]
+- !private ["Sa", "filter"]
 - !private ["SK", ""]
 - !private ["SK", "append"]
 - !private ["SK", "contains"]
+- !private ["SK", "count"]
+- !private ["SK", "filter"]
 - !private ["SK", "init"]
 - !private ["SK", "split"]
 - !private ["Sl", ""]
 - !private ["Sl", "append"]
 - !private ["Sl", "contains"]
+- !private ["Sl", "count"]
+- !private ["Sl", "filter"]
 - !private ["Sl", "init"]
 - !private ["Sl", "split"]
 - !private ["SL", ""]
@@ -38,19 +47,27 @@ depends-member:
 - !private ["SL", "split"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "split"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "filter"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "split"]
 - !private ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "filter"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "split"]
 - !private ["Se", "append"]
 - !private ["Se", "contains"]
+- !private ["Se", "count"]
+- !private ["Se", "filter"]
 - !private ["Se", "finalStates"]
 - !private ["Se", "from"]
 - !private ["Se", "init"]
@@ -61,16 +78,22 @@ depends-member:
 - !private ["Se", "with"]
 - !private ["SE", "append"]
 - !private ["SE", "contains"]
+- !private ["SE", "count"]
+- !private ["SE", "filter"]
 - !private ["SE", "init"]
 - !private ["SE", "split"]
 - !private ["SQ", ""]
 - !private ["SQ", "append"]
 - !private ["SQ", "contains"]
+- !private ["SQ", "count"]
+- !private ["SQ", "filter"]
 - !private ["SQ", "init"]
 - !private ["SQ", "split"]
 - !private ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", ""]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -90,6 +113,8 @@ depends-member:
 - !private ["SH", ""]
 - !private ["SH", "append"]
 - !private ["SH", "contains"]
+- !private ["SH", "count"]
+- !private ["SH", "filter"]
 - !private ["SH", "init"]
 - !private ["SH", "split"]
 - !private ["s25LosslessStringConvertibleP", ""]
@@ -99,11 +124,17 @@ depends-member:
 - !private ["s10MirrorPathP", "split"]
 - !private ["SM", "append"]
 - !private ["SM", "contains"]
+- !private ["SM", "count"]
+- !private ["SM", "filter"]
 - !private ["Sk", "append"]
 - !private ["Sk", "contains"]
+- !private ["Sk", "count"]
+- !private ["Sk", "filter"]
 - !private ["Sm", ""]
 - !private ["Sm", "append"]
 - !private ["Sm", "contains"]
+- !private ["Sm", "count"]
+- !private ["Sm", "filter"]
 - !private ["Sm", "init"]
 - !private ["Sm", "split"]
 - !private ["ST", "Element"]
@@ -111,6 +142,8 @@ depends-member:
 - !private ["ST", ""]
 - !private ["ST", "append"]
 - !private ["ST", "contains"]
+- !private ["ST", "count"]
+- !private ["ST", "filter"]
 - !private ["ST", "init"]
 - !private ["ST", "makeIterator"]
 - !private ["ST", "split"]
@@ -135,13 +168,18 @@ depends-member:
 - !private ["14FiniteAutomata10TransitionV", "with"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "contains"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "filter"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "split"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "filter"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", ""]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "split"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "split"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", ""]
@@ -149,10 +187,14 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "split"]
 - !private ["s19_HasContiguousBytesP", "append"]
 - !private ["s19_HasContiguousBytesP", "contains"]
+- !private ["s19_HasContiguousBytesP", "count"]
+- !private ["s19_HasContiguousBytesP", "filter"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "split"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "count"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
 depends-nominal:
 - !private "Sa"
 - !private "SK"
@@ -187,6 +229,7 @@ depends-nominal:
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"

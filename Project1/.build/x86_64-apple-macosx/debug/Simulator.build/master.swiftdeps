@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "8f1e94e64655702958d33a3d0965279b"
-build_time: [1617293201, 678545000]
+build_time: [1618310392, 813214000]
 inputs:
-  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/Simulator.swift": [1617293198, 33877322]
+  "/Users/mgrossu/School/8.semester/IZA/Project1/Sources/Simulator/Simulator.swift": [1618310368, 311666354]
