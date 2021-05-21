@@ -20,14 +20,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         preview.videoGravity = .resizeAspectFill
         return preview
     }()
+    private let device = AVCaptureDevice.default(for: .video)!
     private let videoOutput = AVCaptureVideoDataOutput()
-    private var drawings: [CAShapeLayer] = []
+    private var focusPoints: [CGPoint] = []
 
     //functions
     
     //add default rear camera feed
-    private func addCameraInput(){
-        let device = AVCaptureDevice.default(for: .video)!
+    private func addCameraInput(_ device: AVCaptureDevice){
         let cameraInput = try! AVCaptureDeviceInput(device: device)
         self.captureSession.addInput(cameraInput)
     }
@@ -50,32 +50,48 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     //focus on the face detected
-    private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]) {
-        self.clearDrawings()
-        let facesBoundingBoxes: [CAShapeLayer] = observedFaces.map({ (observedFace: VNFaceObservation) -> CAShapeLayer in
-            let faceBoundingBoxOnScreen = self.previewLayer.layerRectConverted(fromMetadataOutputRect: observedFace.boundingBox)
-            let faceBoundingBoxPath = CGPath(rect: faceBoundingBoxOnScreen, transform: nil)
-            let faceBoundingBoxShape = CAShapeLayer()
-            faceBoundingBoxShape.path = faceBoundingBoxPath
-            faceBoundingBoxShape.fillColor = UIColor.clear.cgColor
-            faceBoundingBoxShape.strokeColor = UIColor.green.cgColor
-            return faceBoundingBoxShape
-        })
-        facesBoundingBoxes.forEach({ faceBoundingBox in self.view.layer.addSublayer(faceBoundingBox) })
-        self.drawings = facesBoundingBoxes
+    private func handleFaceDetectionResultsFocus(_ observedFaces: [VNFaceObservation]) {
+        DispatchQueue.main.async {
+                for face in observedFaces
+                {
+                    let box = face.boundingBox
+                    let boxOnScreen = self.convert(rect: box)
+                    let focusPoint: CGPoint = CGPoint(x: boxOnScreen.midX, y: boxOnScreen.midY)
+                    self.changeFocus(focusPoint, self.device)
+                }
+        }
     }
-    private func clearDrawings() {
-        self.drawings.forEach({ drawing in drawing.removeFromSuperlayer() })
+        
+    private func convert(rect: CGRect) -> CGRect{
+        let boxOnScreen = self.previewLayer.layerRectConverted(fromMetadataOutputRect: rect)
+        return boxOnScreen
+    }
+    
+    private func changeFocus(_ focusPoint: CGPoint,_ device:AVCaptureDevice){
+        do {
+        try device.lockForConfiguration()
+        if device.isFocusPointOfInterestSupported && device.isFocusModeSupported(.autoFocus){
+            device.focusPointOfInterest = focusPoint
+            print("Face on x: \(focusPoint.x) and y: \(focusPoint)")
+            device.focusMode = .autoFocus
+        }
+        device.unlockForConfiguration()
+        } catch {
+            print("Could not lock device for configuration: \(error)")
+        }
     }
     
     //make the request to detect the face, handles the request
     private func detectFace(in image: CVPixelBuffer) {
         let faceDetectionRequest = VNDetectFaceLandmarksRequest(completionHandler: { (request: VNRequest, error: Error?) in
             DispatchQueue.main.async {
-                if let results = request.results as? [VNFaceObservation] {
-                    self.handleFaceDetectionResults(results)
+                if let results = request.results as? [VNFaceObservation], results.count > 0 {
+                    
+                    print("did detect \(results.count) face(s)")
+                    self.handleFaceDetectionResultsFocus(results)
+                    
                 } else {
-                    self.clearDrawings()
+                    print("did not detect any face")
                 }
             }
         })
@@ -99,7 +115,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.addCameraInput()
+        self.addCameraInput(device)
         self.addPreviewLayer()
         self.addVideoOutput()
         self.captureSession.startRunning()
@@ -107,7 +123,7 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.previewLayer.frame = self.view.frame
+        self.previewLayer.frame = self.view.bounds
     }
 
 
