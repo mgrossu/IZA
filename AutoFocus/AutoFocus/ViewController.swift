@@ -14,15 +14,14 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     //variables
     
     private let captureSession = AVCaptureSession()
-    //lazy because first the captureSession needs to be loaded
-    private lazy var previewLayer: AVCaptureVideoPreviewLayer = {
+    private lazy var previewLayer: AVCaptureVideoPreviewLayer = { //lazy because first the captureSession needs to be loaded
         let preview = AVCaptureVideoPreviewLayer(session: self.captureSession)
         preview.videoGravity = .resizeAspectFill
         return preview
     }()
-    private let device = AVCaptureDevice.default(for: .video)!
+    private let device = AVCaptureDevice.default(for: .video)! // default rear camera
     private let videoOutput = AVCaptureVideoDataOutput()
-    private var focusPoints: [CGPoint] = []
+    private var faceLayers: [CAShapeLayer] = []
 
     //functions
     
@@ -49,30 +48,37 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             connection.videoOrientation = .portrait
     }
     
-    //focus on the face detected
-    private func handleFaceDetectionResultsFocus(_ observedFaces: [VNFaceObservation]) {
-        DispatchQueue.main.async {
+    //handle the face detected
+    private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]) {
                 for face in observedFaces
                 {
                     let box = face.boundingBox
                     let boxOnScreen = self.convert(rect: box)
                     let focusPoint: CGPoint = CGPoint(x: boxOnScreen.midX, y: boxOnScreen.midY)
                     self.changeFocus(focusPoint, self.device)
+                    let boxOnScreenPath = CGPath(rect: boxOnScreen, transform: nil)
+                    
+                    let faceLayer = CAShapeLayer()
+                    faceLayer.path = boxOnScreenPath
+                    faceLayer.fillColor = UIColor.clear.cgColor
+                    faceLayer.strokeColor = UIColor.yellow.cgColor
+                    
+                    self.faceLayers.append(faceLayer)
+                    self.view.layer.addSublayer(faceLayer)
                 }
-        }
     }
-        
+    //converts the normalize coordination of the detected face rectangle into the pixeled coordination on the screen
     private func convert(rect: CGRect) -> CGRect{
         let boxOnScreen = self.previewLayer.layerRectConverted(fromMetadataOutputRect: rect)
         return boxOnScreen
     }
-    
-    private func changeFocus(_ focusPoint: CGPoint,_ device:AVCaptureDevice){
+    //change the focus of the camera
+    private func changeFocus(_ focusPoint: CGPoint, _ device:AVCaptureDevice){
         do {
         try device.lockForConfiguration()
         if device.isFocusPointOfInterestSupported && device.isFocusModeSupported(.autoFocus){
             device.focusPointOfInterest = focusPoint
-            print("Face on x: \(focusPoint.x) and y: \(focusPoint)")
+            print("x: \(focusPoint.x), y: \(focusPoint)")
             device.focusMode = .autoFocus
         }
         device.unlockForConfiguration()
@@ -85,10 +91,12 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     private func detectFace(in image: CVPixelBuffer) {
         let faceDetectionRequest = VNDetectFaceLandmarksRequest(completionHandler: { (request: VNRequest, error: Error?) in
             DispatchQueue.main.async {
+                self.faceLayers.forEach({drawing in drawing.removeFromSuperlayer()})
+                
                 if let results = request.results as? [VNFaceObservation], results.count > 0 {
                     
                     print("did detect \(results.count) face(s)")
-                    self.handleFaceDetectionResultsFocus(results)
+                    self.handleFaceDetectionResults(results)
                     
                 } else {
                     print("did not detect any face")
@@ -107,7 +115,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
             debugPrint("unable to get image from sample buffer")
             return
         }
-        //print("did receive image frame")
         // process image here
         self.detectFace(in: frame)
         
@@ -125,6 +132,4 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         super.viewDidLayoutSubviews()
         self.previewLayer.frame = self.view.bounds
     }
-
-
 }
