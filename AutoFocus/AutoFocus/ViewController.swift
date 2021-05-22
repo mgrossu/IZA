@@ -49,23 +49,22 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     
     //handle the face detected
-    private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]) {
-                for face in observedFaces
-                {
-                    let box = face.boundingBox
-                    let boxOnScreen = self.convert(rect: box)
-                    let focusPoint: CGPoint = CGPoint(x: boxOnScreen.midX, y: boxOnScreen.midY)
-                    self.changeFocus(focusPoint, self.device)
-                    let boxOnScreenPath = CGPath(rect: boxOnScreen, transform: nil)
+    private func handleFaceDetectionResults(_ observedFaces: [VNFaceObservation]){
+        for face in observedFaces{
+                let box = face.boundingBox
+                let boxOnScreen = self.convert(rect: box)
+                let focusPoint = CGPoint(x: box.midX, y: box.midY)//uses {0,0} to {1,1} coordinations where {1,1} is right
+                self.changeFocus(focusPoint, self.device)
+                let boxOnScreenPath = CGPath(rect: boxOnScreen, transform: nil)
                     
-                    let faceLayer = CAShapeLayer()
-                    faceLayer.path = boxOnScreenPath
-                    faceLayer.fillColor = UIColor.clear.cgColor
-                    faceLayer.strokeColor = UIColor.yellow.cgColor
-                    
-                    self.faceLayers.append(faceLayer)
-                    self.view.layer.addSublayer(faceLayer)
-                }
+                let faceLayer = CAShapeLayer()
+                faceLayer.path = boxOnScreenPath
+                faceLayer.fillColor = UIColor.clear.cgColor
+                faceLayer.strokeColor = UIColor.yellow.cgColor
+            
+                self.faceLayers.append(faceLayer)
+                self.view.layer.addSublayer(faceLayer)
+        }
     }
     //converts the normalize coordination of the detected face rectangle into the pixeled coordination on the screen
     private func convert(rect: CGRect) -> CGRect{
@@ -74,16 +73,17 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
     }
     //change the focus of the camera
     private func changeFocus(_ focusPoint: CGPoint, _ device:AVCaptureDevice){
+        print("Focus on x: \(focusPoint.x), y: \(focusPoint.y)")
         do {
-        try device.lockForConfiguration()
-        if device.isFocusPointOfInterestSupported && device.isFocusModeSupported(.autoFocus){
-            device.focusPointOfInterest = focusPoint
-            print("x: \(focusPoint.x), y: \(focusPoint)")
-            device.focusMode = .autoFocus
-        }
-        device.unlockForConfiguration()
+            try device.lockForConfiguration()
+            if device.isFocusPointOfInterestSupported{
+                device.focusPointOfInterest = focusPoint
+                device.focusMode = .autoFocus
+            }
+
+            device.unlockForConfiguration()
         } catch {
-            print("Could not lock device for configuration: \(error)")
+                print("Could not lock device for configuration: \(error)")
         }
     }
     
@@ -119,12 +119,25 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         self.detectFace(in: frame)
         
     }
+    private func setDefaultFocus(_ device:AVCaptureDevice) {
+            do {
+                try device.lockForConfiguration()
+                    device.isSubjectAreaChangeMonitoringEnabled = true
+                    device.focusMode = AVCaptureDevice.FocusMode.continuousAutoFocus
+                device.unlockForConfiguration()
+
+            } catch {
+                // Handle errors here
+                print("There was an error focusing the device's camera")
+            }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addCameraInput(device)
         self.addPreviewLayer()
         self.addVideoOutput()
+        self.setDefaultFocus(device)
         self.captureSession.startRunning()
     }
     
